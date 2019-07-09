@@ -74,7 +74,7 @@
         <scene sceneID="2Kw-1j-qfR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Null" id="DXe-4r-wOy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="NX4-nf-vHf"/>
+                    <tabBarItem key="tabBarItem" title="" id="NX4-nf-vHf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufQ-fA-hGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

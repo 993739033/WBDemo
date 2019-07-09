@@ -9,22 +9,47 @@
 import UIKit
 
 class MainTabController: UITabBarController {
+    
+    private lazy var composeBtn:UIButton = UIButton(bgName: "add_1", bgLighterName: "add_2")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setComposeBtn()
+        
+       
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //mark: 记得调用super
+        super.viewWillAppear(animated)
+        setBtnEnable()
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
+}
+//Mark:- 设置UI界面
+extension MainTabController{
+    private func setComposeBtn(){
+//        composeBtn=UIButton.getUIButton(bgName: "add_1", bgLighterName: "add_2")
+//        composeBtn.sizeToFit()
+        
+        composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height*0.5 )
+        tabBar.addSubview(composeBtn)
+        composeBtn.addTarget(self, action: #selector(onComposeBtnClick), for: .touchUpInside)
+        
+    }
+    
+    
+    private func setBtnEnable(){
+         tabBar.items![2].isEnabled=false;
+    }
+   
+}
+
+//MARK:- 这里做事件监听的扩展
+extension MainTabController{
+    @objc private func onComposeBtnClick(){
+        print("onCompostBtnClick")
+    }
 }

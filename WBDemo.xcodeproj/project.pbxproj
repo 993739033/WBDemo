@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6ADFE83222CAF3B2009526A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADFE83122CAF3B2009526A6 /* AppDelegate.swift */; };
-		6ADFE83422CAF3B2009526A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADFE83322CAF3B2009526A6 /* ViewController.swift */; };
 		6ADFE83722CAF3B2009526A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADFE83522CAF3B2009526A6 /* Main.storyboard */; };
 		6ADFE83922CAF3B3009526A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADFE83822CAF3B3009526A6 /* Assets.xcassets */; };
 		6ADFE83C22CAF3B3009526A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADFE83A22CAF3B3009526A6 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		6AE0DB2C22D47C3300479B33 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE0DB2A22D47C3300479B33 /* Search.storyboard */; };
 		6AE0DB2E22D47C6800479B33 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE0DB2D22D47C6800479B33 /* My.storyboard */; };
 		6AE0DB3022D480EE00479B33 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE0DB2F22D480EE00479B33 /* Null.storyboard */; };
+		6AE0DB3622D494EB00479B33 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE0DB3522D494EB00479B33 /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* Begin PBXFileReference section */
 		6ADFE82E22CAF3B2009526A6 /* WBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADFE83122CAF3B2009526A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6ADFE83322CAF3B2009526A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6ADFE83622CAF3B2009526A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ADFE83822CAF3B3009526A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADFE83B22CAF3B3009526A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		6AE0DB2B22D47C3300479B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WBDemo/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		6AE0DB2D22D47C6800479B33 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		6AE0DB2F22D480EE00479B33 /* Null.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		6AE0DB3522D494EB00479B33 /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +117,11 @@
 				6AE0DB1B22D4756000479B33 /* 主要 */,
 				6AE0DB1C22D4756000479B33 /* 主页 */,
 				6AE0DB1922D4756000479B33 /* 消息 */,
-				6AE0DB1A22D4756000479B33 /* 搜索 */,
 				6AE0DB1D22D4756000479B33 /* 我的 */,
-				6ADFE83122CAF3B2009526A6 /* AppDelegate.swift */,
-				6ADFE83322CAF3B2009526A6 /* ViewController.swift */,
+				6AE0DB1A22D4756000479B33 /* 搜索 */,
+				6AE0DB3322D494CD00479B33 /* 工具 */,
 				6ADFE83522CAF3B2009526A6 /* Main.storyboard */,
+				6ADFE83122CAF3B2009526A6 /* AppDelegate.swift */,
 				6ADFE83822CAF3B3009526A6 /* Assets.xcassets */,
 				6ADFE83A22CAF3B3009526A6 /* LaunchScreen.storyboard */,
 				6ADFE83D22CAF3B3009526A6 /* Info.plist */,
@@ -190,6 +190,22 @@
 				6AE0DB2422D477F000479B33 /* MyController.swift */,
 			);
 			path = "我的";
+			sourceTree = "<group>";
+		};
+		6AE0DB3322D494CD00479B33 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				6AE0DB3422D494CD00479B33 /* 扩展 */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		6AE0DB3422D494CD00479B33 /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				6AE0DB3522D494EB00479B33 /* UIButton-Extension.swift */,
+			);
+			path = "扩展";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE0DB2122D477DB00479B33 /* HomeController.swift in Sources */,
-				6ADFE83422CAF3B2009526A6 /* ViewController.swift in Sources */,
 				6ADFE83222CAF3B2009526A6 /* AppDelegate.swift in Sources */,
 				6AE0DB1F22D4766A00479B33 /* MainTabController.swift in Sources */,
+				6AE0DB3622D494EB00479B33 /* UIButton-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
