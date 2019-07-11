@@ -12,7 +12,7 @@
         <!--我的-->
         <scene sceneID="cYw-58-7NZ">
             <objects>
-                <tableViewController id="d6z-gk-Q0Q" customClass="MyController" sceneMemberID="viewController">
+                <tableViewController id="d6z-gk-Q0Q" customClass="MyTableController" customModule="WBDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dxR-p7-E1L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

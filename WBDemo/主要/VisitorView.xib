@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisitorView" customModule="WBDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ju-64-qL8">
+                    <rect key="frame" x="107.5" y="327.5" width="60" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="TGb-VN-MGY"/>
+                        <constraint firstAttribute="width" constant="60" id="Y1L-fh-tBy"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" red="1" green="0.61247928397631313" blue="0.19955170711533188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请登陆、注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwg-l6-X7C">
+                    <rect key="frame" x="135.5" y="277" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-Hi-h7y">
+                    <rect key="frame" x="207.5" y="327.5" width="60" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="3aX-mo-079"/>
+                        <constraint firstAttribute="width" constant="60" id="4cv-uh-u2F"/>
+                    </constraints>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sousuo" translatesAutoresizingMaskIntoConstraints="NO" id="Twy-49-ZrB">
+                    <rect key="frame" x="93" y="276.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="FIR-j1-SMQ"/>
+                        <constraint firstAttribute="height" constant="22" id="kwn-88-ITz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Twy-49-ZrB" firstAttribute="centerY" secondItem="zwg-l6-X7C" secondAttribute="centerY" id="6IA-nu-aBZ"/>
+                <constraint firstItem="zwg-l6-X7C" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BSc-tg-obc"/>
+                <constraint firstItem="3ju-64-qL8" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-50" id="TW9-b5-3e4"/>
+                <constraint firstItem="9Di-Hi-h7y" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="cah-lV-i80"/>
+                <constraint firstItem="9Di-Hi-h7y" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="50" id="pwj-mn-6Ko"/>
+                <constraint firstItem="Twy-49-ZrB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="93" id="qmD-Cq-mhw"/>
+                <constraint firstItem="3ju-64-qL8" firstAttribute="top" secondItem="zwg-l6-X7C" secondAttribute="bottom" constant="29.5" id="vIL-tr-Bao"/>
+                <constraint firstItem="9Di-Hi-h7y" firstAttribute="firstBaseline" secondItem="3ju-64-qL8" secondAttribute="firstBaseline" id="zkq-EF-hu7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sousuo" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>

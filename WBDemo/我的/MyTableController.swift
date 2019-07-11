@@ -1,14 +1,14 @@
 //
-//  MainController.swift
+//  MyTableController.swift
 //  WBDemo
 //
-//  Created by MainBack on 2019/7/9.
+//  Created by MainBack on 2019/7/11.
 //  Copyright © 2019 MainBack. All rights reserved.
 //
 
 import UIKit
 
-class MessageController: UITableViewController {
+class MyTableController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

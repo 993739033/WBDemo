@@ -15,9 +15,7 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setComposeBtn()
-        
-       
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,14 +1,14 @@
 //
-//  MainController.swift
+//  SearchTableController.swift
 //  WBDemo
 //
-//  Created by MainBack on 2019/7/9.
+//  Created by MainBack on 2019/7/11.
 //  Copyright © 2019 MainBack. All rights reserved.
 //
 
 import UIKit
 
-class MyController: UITableViewController {
+class SearchTableController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
