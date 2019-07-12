@@ -42,7 +42,7 @@
                         <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </state>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sousuo" translatesAutoresizingMaskIntoConstraints="NO" id="Twy-49-ZrB">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhuye" translatesAutoresizingMaskIntoConstraints="NO" id="Twy-49-ZrB">
                     <rect key="frame" x="93" y="276.5" width="22" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="22" id="FIR-j1-SMQ"/>
@@ -53,18 +53,24 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Twy-49-ZrB" firstAttribute="centerY" secondItem="zwg-l6-X7C" secondAttribute="centerY" id="6IA-nu-aBZ"/>
+                <constraint firstItem="zwg-l6-X7C" firstAttribute="leading" secondItem="Twy-49-ZrB" secondAttribute="trailing" constant="20.5" id="8lQ-7P-kw7"/>
                 <constraint firstItem="zwg-l6-X7C" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BSc-tg-obc"/>
                 <constraint firstItem="3ju-64-qL8" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-50" id="TW9-b5-3e4"/>
                 <constraint firstItem="9Di-Hi-h7y" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="cah-lV-i80"/>
                 <constraint firstItem="9Di-Hi-h7y" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="50" id="pwj-mn-6Ko"/>
-                <constraint firstItem="Twy-49-ZrB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="93" id="qmD-Cq-mhw"/>
                 <constraint firstItem="3ju-64-qL8" firstAttribute="top" secondItem="zwg-l6-X7C" secondAttribute="bottom" constant="29.5" id="vIL-tr-Bao"/>
                 <constraint firstItem="9Di-Hi-h7y" firstAttribute="firstBaseline" secondItem="3ju-64-qL8" secondAttribute="firstBaseline" id="zkq-EF-hu7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="Btn_Login" destination="9Di-Hi-h7y" id="q0q-pd-AdQ"/>
+                <outlet property="Btn_Register" destination="3ju-64-qL8" id="bn3-pK-0bE"/>
+                <outlet property="Title" destination="zwg-l6-X7C" id="dL8-Zv-Sed"/>
+                <outlet property="img" destination="Twy-49-ZrB" id="9Sa-Qk-eXm"/>
+            </connections>
         </view>
     </objects>
     <resources>
-        <image name="sousuo" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="zhuye" width="21.333333969116211" height="21.333333969116211"/>
     </resources>
 </document>

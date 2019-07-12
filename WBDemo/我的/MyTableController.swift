@@ -13,6 +13,7 @@ class MyTableController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+         LoginView.setupView(title: "请登录注册后查看我的界面！", img: "wode", color: UIColor.white)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

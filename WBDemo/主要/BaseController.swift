@@ -20,6 +20,7 @@ class BaseController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationView()
     }
 
 }
@@ -30,4 +31,22 @@ extension BaseController{
         view = LoginView;
     }
     
+    private func setNavigationView(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(onRegisterClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(onLoginClick))
+        LoginView.Btn_Login.addTarget(self, action: #selector(onLoginClick), for: .touchUpInside)
+        LoginView.Btn_Register.addTarget(self, action: #selector(onRegisterClick), for: .touchUpInside)
+    }
+    
+}
+
+//MARK:- 设置监听
+extension BaseController{
+    @objc private func onRegisterClick(){
+        print("register")
+    }
+    
+    @objc private func onLoginClick(){
+        print("login")
+    }
 }

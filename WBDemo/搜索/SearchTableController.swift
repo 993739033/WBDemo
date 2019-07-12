@@ -12,6 +12,8 @@ class SearchTableController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LoginView.setupView(title: "请登录注册后查看搜索界面！", img: "sousuo", color: UIColor.white)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
