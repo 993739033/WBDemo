@@ -22,7 +22,10 @@
                             <outlet property="delegate" destination="7Or-7u-LTl" id="KHk-aL-dM5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="主页" id="HnP-HZ-NYL"/>
+                    <navigationItem key="navigationItem" title="主页" id="HnP-HZ-NYL">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="renren" id="f7D-AI-Y8f"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="erweima" id="QYU-O4-Owt"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTQ-RW-2Uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +50,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="erweima" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="renren" width="21.333333969116211" height="21.333333969116211"/>
         <image name="zhuye" width="21.333333969116211" height="21.333333969116211"/>
     </resources>
 </document>

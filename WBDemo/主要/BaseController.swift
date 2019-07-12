@@ -10,7 +10,7 @@ import UIKit
 
 class BaseController: UITableViewController {
     
-    var isLogin : Bool = false
+    var isLogin : Bool = true
     
     lazy var LoginView:VisitorView = VisitorView.visitorView()
     
@@ -20,7 +20,10 @@ class BaseController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationView()
+        if isLogin {
+           return
+        }
+         setNavigationView()
     }
 
 }
