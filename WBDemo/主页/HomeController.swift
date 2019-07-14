@@ -34,6 +34,16 @@ extension HomeController{
 extension HomeController{
     @objc private func onTitleBtnClick(){
         titleBtn.isSelected = !titleBtn.isSelected
+        let vc = PopController()
+        vc.modalPresentationStyle = .custom
+        vc.transitioningDelegate = self
+        self.present(vc, animated: true, completion: nil)
     }
     
+}
+
+extension HomeController : UIViewControllerTransitioningDelegate{
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return popPresentController(presentedViewController: presented, presenting: presenting)
+    }
 }

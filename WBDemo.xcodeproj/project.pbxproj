@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A17D4BB22DB05670025C559 /* PopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17D4B922DB05670025C559 /* PopController.swift */; };
+		6A17D4BC22DB05670025C559 /* PopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A17D4BA22DB05670025C559 /* PopController.xib */; };
+		6A17D4BE22DB1A710025C559 /* popPresentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17D4BD22DB1A710025C559 /* popPresentController.swift */; };
 		6AA650C922D711B100EB2019 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA650C822D711B100EB2019 /* BaseController.swift */; };
 		6AA650CB22D718DC00EB2019 /* MessageTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA650CA22D718DC00EB2019 /* MessageTableController.swift */; };
 		6AA650CD22D7191E00EB2019 /* MyTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA650CC22D7191E00EB2019 /* MyTableController.swift */; };
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A17D4B922DB05670025C559 /* PopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopController.swift; sourceTree = "<group>"; };
+		6A17D4BA22DB05670025C559 /* PopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopController.xib; sourceTree = "<group>"; };
+		6A17D4BD22DB1A710025C559 /* popPresentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popPresentController.swift; sourceTree = "<group>"; };
 		6AA650C822D711B100EB2019 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		6AA650CA22D718DC00EB2019 /* MessageTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableController.swift; sourceTree = "<group>"; };
 		6AA650CC22D7191E00EB2019 /* MyTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableController.swift; sourceTree = "<group>"; };
@@ -186,6 +192,8 @@
 				6AA650C822D711B100EB2019 /* BaseController.swift */,
 				6AA650D022D71A4900EB2019 /* VisitorView.swift */,
 				6AA650D222D71A5E00EB2019 /* VisitorView.xib */,
+				6A17D4B922DB05670025C559 /* PopController.swift */,
+				6A17D4BA22DB05670025C559 /* PopController.xib */,
 			);
 			path = "主要";
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			children = (
 				6AE0DB2522D47BBC00479B33 /* Home.storyboard */,
 				6AE0DB2022D477DB00479B33 /* HomeController.swift */,
+				6A17D4BD22DB1A710025C559 /* popPresentController.swift */,
 			);
 			path = "主页";
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 				6ADFE83922CAF3B3009526A6 /* Assets.xcassets in Resources */,
 				6AE0DB2922D47C1900479B33 /* Message.storyboard in Resources */,
 				6ADFE83722CAF3B2009526A6 /* Main.storyboard in Resources */,
+				6A17D4BC22DB05670025C559 /* PopController.xib in Resources */,
 				6AE0DB2C22D47C3300479B33 /* Search.storyboard in Resources */,
 				6AE0DB2722D47BBC00479B33 /* Home.storyboard in Resources */,
 				6AE0DB2E22D47C6800479B33 /* My.storyboard in Resources */,
@@ -364,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE2F23322D87AF9009D8CD0 /* TitleBtn.swift in Sources */,
+				6A17D4BB22DB05670025C559 /* PopController.swift in Sources */,
 				6AE2F23122D87401009D8CD0 /* UIBarButtonItemExtension.swift in Sources */,
 				6AA650CF22D7194000EB2019 /* SearchTableController.swift in Sources */,
+				6A17D4BE22DB1A710025C559 /* popPresentController.swift in Sources */,
 				6AA650CB22D718DC00EB2019 /* MessageTableController.swift in Sources */,
 				6AE0DB2122D477DB00479B33 /* HomeController.swift in Sources */,
 				6AA650CD22D7191E00EB2019 /* MyTableController.swift in Sources */,
