@@ -9,21 +9,23 @@
 import UIKit
 
 class HomeController: BaseController {
+   
+    private lazy var anim : PopupAnim = PopupAnim()
     
     lazy private var titleBtn : UIButton = TitleBtn()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         LoginView.startRotationAnim()
         setNavView()
-
+        
     }
 }
 //MARK: - 初始化操作
 extension HomeController{
     private func setNavView(){
-//            navigationItem.leftBarButtonItem = UIBarButtonItem(imgName: "renren")
-//            navigationItem.rightBarButtonItem = UIBarButtonItem(imgName: "erweima")
+        //            navigationItem.leftBarButtonItem = UIBarButtonItem(imgName: "renren")
+        //            navigationItem.rightBarButtonItem = UIBarButtonItem(imgName: "erweima")
         titleBtn.addTarget(self, action: #selector(onTitleBtnClick), for: .touchUpInside)
         navigationItem.titleView = titleBtn
         
@@ -36,14 +38,10 @@ extension HomeController{
         titleBtn.isSelected = !titleBtn.isSelected
         let vc = PopController()
         vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = self
+        vc.transitioningDelegate = anim
         self.present(vc, animated: true, completion: nil)
+        
     }
     
 }
 
-extension HomeController : UIViewControllerTransitioningDelegate{
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return popPresentController(presentedViewController: presented, presenting: presenting)
-    }
-}

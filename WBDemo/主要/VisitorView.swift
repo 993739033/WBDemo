@@ -29,7 +29,7 @@ class VisitorView: UIView {
     
     
     func startRotationAnim(){
-        let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
+        let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")	
         rotationAnim.fromValue = 0
         rotationAnim.toValue = Double.pi * 2
         rotationAnim.repeatCount = MAXFLOAT
