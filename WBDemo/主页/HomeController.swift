@@ -10,9 +10,12 @@ import UIKit
 
 class HomeController: BaseController {
    
-    private lazy var anim : PopupAnim = PopupAnim()
-    
+
     lazy private var titleBtn : UIButton = TitleBtn()
+    
+    private lazy var anim : PopupAnim = PopupAnim { [weak self](pressed) in
+        self?.titleBtn.isSelected = pressed
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +38,6 @@ extension HomeController{
 
 extension HomeController{
     @objc private func onTitleBtnClick(){
-        titleBtn.isSelected = !titleBtn.isSelected
         let vc = PopController()
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = anim
